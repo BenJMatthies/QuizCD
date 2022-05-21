@@ -1,8 +1,13 @@
 #BlueJ class context
 comment0.target=Grader
 comment0.text=\r\n\ Write\ a\ description\ of\ Grader\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=students
-comment1.target=Grader(Student[])
-comment2.params=studentToAdd
-comment2.target=void\ addStudent(Student)
-numComments=3
+comment1.params=studentToAdd
+comment1.target=void\ addStudent(Student)
+comment1.text=public\ Grader(Student[]\ students)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ _students\ \=\ students;\r\n}
+comment2.params=studentId
+comment2.target=LetterGrade\ getLetterGrade(java.lang.String)
+comment3.params=studentId\ quiz
+comment3.target=void\ administer(java.lang.String,\ Quiz)
+comment4.params=studentId
+comment4.target=Student\ getStudentById(java.lang.String)
+numComments=5

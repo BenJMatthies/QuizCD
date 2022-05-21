@@ -7,12 +7,12 @@
  */
 public class Grader {
 
-    private Student[] _students;
+    private Student[] _students = new Student[0];
     
-    public Grader(Student[] students)
+    /*public Grader(Student[] students)
     {
         _students = students;
-    }
+    }*/
     
     public void addStudent(Student studentToAdd)
     {
@@ -40,18 +40,28 @@ public class Grader {
         
         for(LetterGrade lg : LetterGrade.values())
         {
-            
+            if(lg.getMinPercent() <= averageGrade)
+                return lg;
         }
+        return null;
+    }
+    
+    public void administer(String studentId, Quiz quiz)
+    {
+        //getStudentById(studentId).addGrade(new Grade(quiz.getNumberOfQuestions(), quiz.administer()));
+        Student currentStudent = getStudentById(studentId);
+        int quizLength = quiz.getNumberOfQuestions();
+        int quizScore = quiz.administer();
+        currentStudent.addGrade(new Grade(quizLength, quizScore));//*/
     }
     
     private Student getStudentById(String studentId)
     {
-        Student requestedStudent;
         for(Student s : _students)
         {
             if(s.getId() == studentId)
-                requestedStudent = s;
+                return s;
         }
-        return new Student("", new Grade[]{new Grade(0,0)});
+        return null;
     }
 }

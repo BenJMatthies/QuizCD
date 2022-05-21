@@ -20,7 +20,7 @@ public enum LetterGrade {
         _minPercent = minPercent;
     }
     
-    public double getMinimumPercent()
+    public double getMinPercent()
     {
         return this._minPercent;
     }

@@ -8,12 +8,12 @@
 public class Student {
 
     private String _id;
-    private Grade[] _grades;
+    private Grade[] _grades = new Grade[0];
     
-    private Student(String id, Grade[] grades)
+    public Student(String id)
     {
         _id = id;
-        _grades = grades;
+        //_grades = grades;
     }
     
     public String getId()
