@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Grader
+comment0.text=\r\n\ Write\ a\ description\ of\ Grader\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=students
+comment1.target=Grader(Student[])
+comment2.params=studentToAdd
+comment2.target=void\ addStudent(Student)
+numComments=3

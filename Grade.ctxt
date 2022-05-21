@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Grade
+comment0.text=\r\n\ Write\ a\ description\ of\ Grade\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=numQuestions\ numCorrect
+comment1.target=Grade(int,\ int)
+comment2.params=
+comment2.target=double\ getPercentScore()
+numComments=3
